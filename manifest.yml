@@ -5,10 +5,9 @@ declared-services:
     plan: lite
 applications:
 - path: .
-  name: watson-discovery-ui
+  name: inbra-analise-sentimento
   buildpack: sdk-for-nodejs
-  memory: 512M
+  memory: 1G
   instances: 1
-  random-route: false
   services:
-  - wdui-discovery-service
+  - Discovery-Nutch
